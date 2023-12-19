@@ -1,9 +1,6 @@
 import React, { createContext, useState } from 'react'
 import useFetch from '../costumehook/useFetch';
 
-
-
-
 export const State = createContext();
 const Context = ({ children }) => {
     const products = useFetch('https://dummyjson.com/products');
