@@ -12,7 +12,7 @@ const Categorie = () => {
     return (
         <>
         <h1 className='heading_cat'>Category {id}</h1>
-            <div className='flex'>
+            <div className='grid'>
                 {data?.products?.map((item, i) => {
                     const isInCart = cart.includes(item);
                     return (
