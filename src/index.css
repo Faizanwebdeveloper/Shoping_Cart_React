@@ -65,6 +65,8 @@ ul li span{
   place-content: center;
   padding: 0rem 12rem;
   margin-top: 1.6rem;
+  max-width: 160rem;
+  margin: 5rem auto;
 
 }
 
@@ -154,6 +156,31 @@ ul li span{
   transform: translate(-50%, -50%);
 }
 
+
+
+.heading_cat::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(51, 134, 189);
+  width: 10%;
+  height: 0.1rem;
+}
+
+.heading_cat {
+  margin: 3rem 0rem 5rem 13rem;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.input {
+  width: 2rem;
+  text-align: center;
+}
+
 .subtotal {
   display: flex;
   justify-content: end;
@@ -206,32 +233,18 @@ ul li span{
   top: 0;
   left: 0;
   padding-top: 3rem;
+  transform: translateX(-100%);
+  animation: slidecate 0.5s ease forwards;
+  
 }
-
-
-.heading_cat::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  background-color: rgb(51, 134, 189);
-  width: 10%;
-  height: 0.1rem;
+@keyframes slidecate {
+  0%{
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(0%); 
+  }
 }
-
-.heading_cat {
-  margin: 3rem 0rem 5rem 13rem;
-  text-transform: uppercase;
-  position: relative;
-  font-size: 1.5rem;
-  display: block;
-}
-
-.input {
-  width: 2rem;
-  text-align: center;
-}
-
 @media(max-width:1080px){
   .grid{
     grid-template-columns: repeat(3, 33.3%);
