@@ -135,20 +135,30 @@ ul li span{
   padding: 1rem 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.cartbox .img {
+  width: 50px;
+}
 .cartbox img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .cartbox .addbuton {
-
   margin: 0;
-
+}
+.cartbox p {
+  font-size: 1.6rem;
 }
 
+.cartbox .product_dec {
+  width: 20rem;
+}
+.cartbox .price {
+  width: 5.2rem;
+}
 .empty {
   position: absolute;
   top: 50%;
@@ -244,6 +254,7 @@ ul li span{
   100% {
     transform: translateX(0%); 
   }
+  
 }
 @media(max-width:1080px){
   .grid{
@@ -255,6 +266,13 @@ ul li span{
 @media(max-width:767px){
   .grid{
     grid-template-columns: repeat(2, 50%);
+  }
+  .cartbox {
+    width: 90%;
+    padding: 1rem;
+  }
+  .cartbox .product_dec {
+    width: 15rem;
   }
 }
 

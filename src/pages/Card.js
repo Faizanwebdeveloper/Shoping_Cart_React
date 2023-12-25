@@ -30,7 +30,7 @@ const Card = () => {
               <div className="img">
                 <img src={item.thumbnail} />
               </div>
-              <p>{item.title}</p>
+              <p className='product_dec'>{item.title}</p>
               <p className="price">₹{Math.ceil(item.price * 83.24)}</p>
               <div>
                 <button onClick={() => dicrease(item.id)}>-</button>
